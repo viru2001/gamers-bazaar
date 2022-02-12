@@ -22,3 +22,68 @@
   bottom: 5%;
   left: 32%;
 }
+.vertical-card-wrapper {
+  width: 20rem;
+}
+
+#chair-img {
+  width: 47%;
+}
+#keyboard-img {
+  width: 80%;
+}
+#headphone-img {
+  width: 80%;
+}
+#mouse-img {
+  width: 70%;
+}
+.category-card-heading {
+  font-size: 2rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "header    header    header  header   header"
+    "carousel carousel carousel carousel carousel"
+    ".  f-heading   f-heading    f-heading    ."
+    "f-card-1 f-card-2 f-card-3 f-card-4 f-card-5"
+    "footer    footer   footer   footer    footer";
+}
+header {
+  grid-area: header;
+}
+.carousel-wrapper {
+  grid-area: carousel;
+}
+#featured-heading {
+  grid-area: f-heading;
+}
+.featured-card{
+    border: solid 1px var(--card-border-color);
+}
+.featured-card:hover{
+    border: solid 1px var(--primary-color);
+    background-color: var(--light-blue-color);
+}
+#monitor-card {
+  grid-area: f-card-1;
+  justify-self: center;
+}
+#chair-card {
+  grid-area: f-card-2;
+}
+#keyboard-card {
+  grid-area: f-card-3;
+}
+#headphone-card {
+  grid-area: f-card-4;
+}
+#mouse-card {
+  grid-area: f-card-5;
+}
+
+footer {
+  grid-area: footer;
+}
