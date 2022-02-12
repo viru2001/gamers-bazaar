@@ -1,3 +1,24 @@
 .brand-name {
   color: var(--primary-color);
 }
+.carousel-img{
+    aspect-ratio: 4/2;
+}
+#carousel-prev-btn,
+#carousel-next-btn {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+#carousel-prev-btn {
+  top: 50%;
+  left: 1%;
+}
+#carousel-next-btn {
+  top: 50%;
+  right: 1%;
+}
+.carousel-content {
+  color: var(--white-color);
+  bottom: 5%;
+  left: 32%;
+}
