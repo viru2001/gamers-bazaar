@@ -79,15 +79,15 @@
 .wrapper {
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
-    "header    header    header  header   header"
-    "carousel carousel carousel carousel carousel"
-    ".  f-heading   f-heading    f-heading    ."
-    "f-card-1 f-card-2 f-card-3 f-card-4 f-card-5"
-    "deals-heading deals-countdown . . deals-btn"
-    "deals-card-1 . deals-card-2 . deals-card-3 "
-    "recent-heading . . . recent-btn"
-    "recent-card-1 recent-card-2 recent-card-3 recent-card-4 recent-card-5"
-    "footer    footer   footer   footer    footer";
+    "header              header        header         header         header"
+    "carousel           carousel      carousel       carousel      carousel"
+    "   .              f-heading      f-heading     f-heading          ."
+    "f-card-1           f-card-2      f-card-3      f-card-4       f-card-5"
+    "deals-heading   deals-countdown      .             .          deals-btn"
+    "deals-card-1         .         deals-card-2        .         deals-card-3 "
+    "recent-heading       .               .             .         recent-btn"
+    "recent-card-1  recent-card-2  recent-card-3  recent-card-4  recent-card-5"
+    "footer            footer          footer         footer         footer";
 }
 header {
   grid-area: header;
