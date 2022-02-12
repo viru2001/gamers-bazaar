@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamers Bazaar</title>
+
+    <link rel="stylesheet" href="https://cool-ui.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header
+      class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+    >
+      <h1 class="brand-name headline-lg p-4">Gamers Bazaar</h1>
+
+      <div class="search-box d-flex align-center justify-between my-4 w-50">
+        <input
+          type="text"
+          class="search-input w-100 p-2 m-2 text-sm"
+          placeholder="Search for products..."
+          required
+        />
+        <button type="submit" class="btn btn-icon p-4">
+          <i class="fas fa-search text-md"></i>
+        </button>
+      </div>
+      <ul class="nav-links d-flex align-center">
+        <li>
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-4">
+            Login
+          </button>
+        </li>
+        <li class="p-relative text-md icon-badge-wrapper m-3">
+          <i class="fas fa-shopping-cart"></i>
+          <span
+            class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+            >5</span
+          >
+        </li>
+        <li class="p-relative text-md icon-badge-wrapper m-3">
+          <i class="fas fa-heart"></i>
+          <span
+            class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+            >7</span
+          >
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>
