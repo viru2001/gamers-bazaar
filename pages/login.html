@@ -35,7 +35,7 @@
               type="button"
               class="btn btn-primary rounded-sm text-sm p-4"
             >
-              Login
+              Signup
             </button>
           </li>
           <li class="p-relative text-md icon-badge-wrapper m-3">
@@ -55,8 +55,65 @@
         </ul>
       </header>
 
+      <!-- login card -->
+      <section class="login-card-wrapper container-center">
+        <div class="login-card rounded-md box-shadow-sm">
+          <div class="d-flex flex-col px-8 py-4">
+            <label class="input-label-required text-sm my-2" for="email"
+              >Email</label
+            >
+            <input
+              type="text"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="d-flex flex-col px-8 py-4">
+            <label class="input-label-required text-sm my-2" for="password"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="Enter password here"
+              required
+            />
+          </div>
+          <div class="d-flex align-center px-8 py-4">
+            <input
+              type="checkbox"
+              id="remember-password"
+              name="remember-password"
+            />
+            <label class="text-sm ml-2" for="remember-password">
+              Remember Password</label
+            >
+            <div class="text-sm ml-auto">
+              <a class="link-text" href="#">Forgot your Password ?</a>
+            </div>
+          </div>
+          <div class="px-8 py-4">
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-4 w-100"
+            >
+              Login
+            </button>
+
+            <div class="text-sm ml-auto d-flex justify-center">
+              <a class="link-text" href="#"
+                >Already have an Account
+                <i class="fas fa-greater-than ml-2 my-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer -->
-      <footer class="footer text-center p-4 mt-8">
+      <footer class="footer text-center p-4">
         <div class="text-md">Made with ❤️ by Viresh Fegade</div>
         <ul class="d-flex justify-center align-center">
           <li class="m-2">

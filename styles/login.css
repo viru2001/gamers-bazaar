@@ -1,4 +1,22 @@
+
 /* navbar */
 .brand-name {
   color: var(--primary-color);
+}
+/* login card */
+.login-card-wrapper{
+    height: calc(100vh - 9.4rem);
+    background-color: var(--light-gray-color);
+}
+.login-card{
+  background-color: var(--white-color);
+  width: 50rem;
+}
+.link-text{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.btn-login{
+  color: var(--black-color);
+  
 }
