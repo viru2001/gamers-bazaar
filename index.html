@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamers Bazaar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cool-ui.netlify.app/styles/main.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div class="wrapper d-grid">
+      <!-- Navbar -->
+      <header
+        class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+      >
+        <h1 class="brand-name headline-lg p-4">Gamers Bazaar</h1>
+
+        <div class="search-box d-flex align-center justify-between my-8 w-50">
+          <input
+            type="text"
+            class="search-input w-100 p-2 m-2 text-sm"
+            placeholder="Search for products..."
+            required
+          />
+          <button type="submit" class="btn btn-icon p-4">
+            <i class="fas fa-search text-md"></i>
+          </button>
+        </div>
+        <ul class="nav-links d-flex align-center">
+          <li>
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-4"
+            >
+              Login
+            </button>
+          </li>
+          <li class="p-relative text-md icon-badge-wrapper m-3">
+            <i class="fas fa-shopping-cart"></i>
+            <span
+              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+              >5</span
+            >
+          </li>
+          <li class="p-relative text-md icon-badge-wrapper m-3">
+            <i class="fas fa-heart"></i>
+            <span
+              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+              >7</span
+            >
+          </li>
+        </ul>
+      </header>
+
+      <!-- carousel -->
+      <section class="p-relative carousel-wrapper">
+        <button
+          type="button"
+          id="carousel-prev-btn"
+          class="btn btn-primary btn-floating p-4 rounded-full p-absolute"
+        >
+          <i class="fas fa-less-than"></i>
+        </button>
+
+        <img
+          class="img-responsive carousel-img"
+          src="./assets/setup4.jpg"
+          alt="gaming setup"
+        />
+        <button
+          type="button"
+          id="carousel-next-btn"
+          class="btn btn-primary btn-floating p-4 rounded-full p-absolute"
+        >
+          <i class="fas fa-greater-than"></i>
+        </button>
+        <div class="p-absolute carousel-content d-flex flex-col align-center">
+          <h2 class="headline-xl">Build Your Dream PC Setup</h2>
+          <button
+            type="button"
+            class="btn btn-primary btn-link rounded-sm text-md p-5"
+          >
+            <a href="#categories">Explore</a>
+          </button>
+        </div>
+      </section>
+      <!-- categories -->
+      <h2 class="headline-lg text-center my-8" id="featured-heading">
+        Featured Categories
+      </h2>
+
+      <section
+        id="monitor-card"
+        class="featured-card card-wrapper place-center my-8"
+      >
+        <div class="p-4 mt-8">
+          <img
+            class="img-responsive"
+            src="./assets/monitor.png"
+            alt="monitor image"
+          />
+        </div>
+        <div class="p-2">
+          <p class="category-card-heading font-wt-bold text-center">Monitors</p>
+        </div>
+      </section>
+
+      <section
+        id="chair-card"
+        class="featured-card card-wrapper place-center my-8"
+      >
+        <div class="p-4">
+          <img
+            id="chair-img"
+            class="img-responsive d-block m-auto"
+            src="./assets/chair.png"
+            alt="gaming chair"
+          />
+        </div>
+        <div class="p-2">
+          <p class="category-card-heading font-wt-bold text-center">
+            Gaming Chairs
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="keyboard-card"
+        class="featured-card card-wrapper place-center my-8"
+      >
+        <div class="p-4">
+          <img
+            id="keyboard-img"
+            class="img-responsive d-block m-auto"
+            src="./assets/keyboard.png"
+            alt="keyboard"
+          />
+        </div>
+        <div class="p-2">
+          <p class="category-card-heading font-wt-bold text-center">Keyboard</p>
+        </div>
+      </section>
+
+      <section
+        id="headphone-card"
+        class="featured-card card-wrapper place-center my-8"
+      >
+        <div class="p-4">
+          <img
+            id="headphone-img"
+            class="img-responsive d-block m-auto"
+            src="./assets/headphones.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="category-card-heading font-wt-bold text-center">
+            Headphones
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="mouse-card"
+        class="featured-card card-wrapper place-center my-8"
+      >
+        <div class="p-4">
+          <img
+            id="mouse-img"
+            class="img-responsive d-block m-auto"
+            src="./assets/mouse.png"
+            alt="mouse"
+          />
+        </div>
+        <div class="p-2">
+          <p class="category-card-heading font-wt-bold text-center">Mouse</p>
+        </div>
+      </section>
+
+      <!-- Deals of the day  -->
+      <h2 class="deals-heading headline-md place-center my-8">
+        Deals of the Day
+      </h2>
+      <section class="daily-deals-countdown my-8">
+        <span><i class="fas fa-clock text-sm"></i></span>
+        <span class="text-sm text-gray">
+          <span>08 :</span>
+          <span>09 :</span>
+          <span>51</span> Left
+        </span>
+      </section>
+
+      <section class="see-all-deals-btn place-center">
+        <button
+          type="button"
+          class="btn btn-primary rounded-sm text-sm p-4 my-8"
+        >
+          See All Deals
+          <i class="fas fa-greater-than ml-2"></i>
+        </button>
+      </section>
+
+      <section
+        id="deals-of-day-card-1"
+        class="card-wrapper deals-of-day-card place-center"
+      >
+        <span class="vertical-card-badge text-sm p-3 p-relative"
+          >Best Seller</span
+        >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-headphones.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Headphones with RGB LED Effect
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 1,790.00</span
+            >
+            <span class="product-original-price text-sm ml-6"
+              >Rs. 2,999.00</span
+            >
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 40%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section id="deals-of-day-card-2" class="card-wrapper deals-of-day-card">
+        <span class="vertical-card-badge text-sm p-3 p-relative"
+          >New Arrival</span
+        >
+        <div class="deal-of-day-keyboard-img-wrapper p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/cosmin-byte-keyboard.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Cosmic Byte Wired Gaming Keyboard, 7 Color RGB Backlit with Effects
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 999.00</span
+            >
+            <span class="product-original-price text-sm ml-6"
+              >Rs. 1,499.00</span
+            >
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 33%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="deals-of-day-card-3"
+        class="card-wrapper deals-of-day-card place-center"
+      >
+        <span class="vertical-card-badge text-sm p-3 p-relative"
+          >Limited Time Deal</span
+        >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-mouse.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Mouse with RGB LED, Lightweight and Durable
+            Design
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 349.00</span
+            >
+            <span class="product-original-price text-sm ml-6">Rs. 699.00</span>
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 50%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <!-- Recently Viewed  -->
+      <h2 class="recently-viewed-heading headline-md place-center my-8">
+        Recently Viewed
+      </h2>
+      <section class="see-all-items-btn place-center">
+        <button
+          type="button"
+          class="btn btn-primary rounded-sm text-sm p-4 my-8"
+        >
+          See All Items
+          <i class="fas fa-greater-than ml-2"></i>
+        </button>
+      </section>
+
+      <section
+        id="recently-viewed-card-1"
+        class="card-wrapper recently-viewed-card place-center"
+      >
+      <span class="vertical-card-badge text-sm p-3 p-relative"
+          >Best Seller</span
+        >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-headphones.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Headphones with RGB LED
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 1,790.00</span
+            >
+            <span class="product-original-price text-sm ml-6"
+              >Rs. 2,999.00</span
+            >
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 40%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="recently-viewed-card-2"
+        class="card-wrapper recently-viewed-card place-center"
+      >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-mouse.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Mouse with RGB LED, Lightweight and Durable
+            Design
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 349.00</span
+            >
+            <span class="product-original-price text-sm ml-6">Rs. 699.00</span>
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 50%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="recently-viewed-card-3"
+        class="card-wrapper recently-viewed-card place-center"
+      >
+      <span class="vertical-card-badge text-sm p-3 p-relative"
+          >Best Seller</span
+        >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-headphones.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Headphones with RGB LED
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 1,790.00</span
+            >
+            <span class="product-original-price text-sm ml-6"
+              >Rs. 2,999.00</span
+            >
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 40%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="recently-viewed-card-4"
+        class="card-wrapper recently-viewed-card"
+      >
+        <div class="deal-of-day-keyboard-img-wrapper p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/cosmin-byte-keyboard.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Cosmic Byte Wired Gaming Keyboard, 7 Color RGB Backlit with Effects
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 999.00</span
+            >
+            <span class="product-original-price text-sm ml-6"
+              >Rs. 1,499.00</span
+            >
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 33%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="recently-viewed-card-5"
+        class="card-wrapper recently-viewed-card place-center"
+      >
+        <div class="p-4">
+          <img
+            class="img-responsive d-block m-auto"
+            src="./assets/readgear-mouse.png"
+            alt="headphone"
+          />
+        </div>
+        <div class="p-2">
+          <p class="font-wt-bold text-center text-sm">
+            Redgear Wired Gaming Mouse with RGB LED, Lightweight and Durable
+            Design
+          </p>
+        </div>
+        <div class="p-8">
+          <div class="product-price-wrapper">
+            <span class="product-discount-price text-sm font-wt-bold"
+              >Rs. 349.00</span
+            >
+            <span class="product-original-price text-sm ml-6">Rs. 699.00</span>
+          </div>
+          <span class="product-discount font-wt-bold text-sm">Save 50%</span>
+        </div>
+        <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+          <button type="button" class="btn btn-primary rounded-sm text-sm p-5">
+            <i class="fas fa-shopping-cart mr-3"></i>
+            Add to Cart
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+          >
+            <i class="fas fa-heart mr-3"></i>
+            Add to Wishlist
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer text-center p-4 mt-8">
+        <div class="text-md">Made with ❤️ by Viresh Fegade</div>
+        <ul class="d-flex justify-center align-center">
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://github.com/viru2001"
+              ><i class="footer-social-icon fab fa-github"></i
+            ></a>
+          </li>
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://twitter.com/fegade_viresh"
+              ><i class="footer-social-icon fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://www.linkedin.com/in/viresh-fegade-43a475148/"
+              ><i class="footer-social-icon fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
