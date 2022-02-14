@@ -1,0 +1,5 @@
+/* navbar */
+.brand-name {
+  color: var(--primary-color);
+  text-decoration: none;
+}

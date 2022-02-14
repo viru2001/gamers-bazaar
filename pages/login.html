@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamers Bazaar | Login</title>
+
+    <link rel="stylesheet" href="https://cool-ui.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="../styles/auth-card.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <div class="wrapper d-grid">
+      <!-- Navbar -->
+      <header
+        class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+      >
+        <a class="brand-name headline-lg font-wt-bold p-4" href="../index.html">Gamers Bazaar</a>
+
+        <div class="search-box d-flex align-center justify-between my-8 w-50">
+          <input
+            type="text"
+            class="search-input w-100 p-2 m-2 text-sm"
+            placeholder="Search for products..."
+            required
+          />
+          <button type="submit" class="btn btn-icon p-4">
+            <i class="fas fa-search text-md"></i>
+          </button>
+        </div>
+        <ul class="nav-links d-flex align-center">
+          <li>
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-4"
+            >
+              Signup
+            </button>
+          </li>
+          <li class="p-relative text-md icon-badge-wrapper m-3">
+            <i class="fas fa-shopping-cart"></i>
+            <span
+              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+              >5</span
+            >
+          </li>
+          <li class="p-relative text-md icon-badge-wrapper m-3">
+            <i class="fas fa-heart"></i>
+            <span
+              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+              >7</span
+            >
+          </li>
+        </ul>
+      </header>
+
+      <!-- login card -->
+      <section class="login-card-wrapper container-center">
+        <div class="login-card rounded-md box-shadow-sm">
+          <div class="d-flex flex-col px-8 py-4">
+            <label class="input-label-required text-sm my-2" for="email"
+              >Email</label
+            >
+            <input
+              type="text"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="d-flex flex-col px-8 py-4">
+            <label class="input-label-required text-sm my-2" for="password"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="Enter password here"
+              required
+            />
+          </div>
+          <div class="d-flex align-center px-8 py-4">
+            <input
+              type="checkbox"
+              id="remember-password"
+              name="remember-password"
+            />
+            <label class="text-sm ml-2" for="remember-password">
+              Remember Password</label
+            >
+            <div class="text-sm ml-auto">
+              <a class="link-text" href="#">Forgot your Password ?</a>
+            </div>
+          </div>
+          <div class="px-8 py-4">
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-4 w-100"
+            >
+              Login
+            </button>
+
+            <div class="text-sm ml-auto d-flex justify-center">
+              <a class="link-text" href="#"
+                >Create New Account
+                <i class="fas fa-greater-than ml-2 my-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer text-center p-4">
+        <div class="text-md">Made with ❤️ by Viresh Fegade</div>
+        <ul class="d-flex justify-center align-center">
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://github.com/viru2001"
+              ><i class="footer-social-icon fab fa-github"></i
+            ></a>
+          </li>
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://twitter.com/fegade_viresh"
+              ><i class="footer-social-icon fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="m-2">
+            <a
+              class="text-md"
+              target="_blank"
+              href="https://www.linkedin.com/in/viresh-fegade-43a475148/"
+              ><i class="footer-social-icon fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

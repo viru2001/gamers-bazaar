@@ -11,6 +11,7 @@
       href="https://cool-ui.netlify.app/styles/main.css"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
@@ -19,7 +20,7 @@
       <header
         class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
       >
-        <h1 class="brand-name headline-lg p-4">Gamers Bazaar</h1>
+        <a class="brand-name headline-lg font-wt-bold p-4" href="#">Gamers Bazaar</a>
 
         <div class="search-box d-flex align-center justify-between my-8 w-50">
           <input
@@ -36,9 +37,9 @@
           <li>
             <button
               type="button"
-              class="btn btn-primary rounded-sm text-sm p-4"
+              class="btn btn-link btn-primary rounded-sm text-sm p-4"
             >
-              Login
+              <a href="./pages/login.html">Login</a>
             </button>
           </li>
           <li class="p-relative text-md icon-badge-wrapper m-3">
@@ -86,7 +87,7 @@
             type="button"
             class="btn btn-primary btn-link rounded-sm text-md p-5"
           >
-            <a href="#categories">Explore</a>
+            <a href="#featured-heading">Explore</a>
           </button>
         </div>
       </section>
