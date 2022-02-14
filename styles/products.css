@@ -1,0 +1,29 @@
+.filter-wrapper{
+    width: 20rem;
+}
+
+.wrapper{
+    grid-template-columns: 25rem 1fr;
+    grid-template-areas: 
+    "header header"
+    "filters products"
+    "footer footer"
+    ;
+
+}
+header{
+    grid-area: header;
+}
+#filters{
+    grid-area: filters;
+    height: 100vh;
+    overflow-y: auto;
+    top:2rem;
+}
+#producst{
+    grid-area : products;
+}
+footer{
+    grid-area: footer;
+}
+
