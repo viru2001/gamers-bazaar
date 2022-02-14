@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gamers Bazaar | Login</title>
+    <title>Gamers Bazaar | Sign Up</title>
 
     <link rel="stylesheet" href="https://cool-ui.netlify.app/styles/main.css" />
     <link rel="stylesheet" href="../styles/auth-card.css" />
@@ -17,7 +17,11 @@
       <header
         class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
       >
-        <a class="brand-name text-dec-none headline-lg font-wt-bold p-4" href="../index.html">Gamers Bazaar</a>
+        <a
+          class="brand-name text-dec-none headline-lg font-wt-bold p-4"
+          href="../index.html"
+          >Gamers Bazaar</a
+        >
 
         <div class="search-box d-flex align-center justify-between my-8 w-50">
           <input
@@ -33,10 +37,10 @@
         <ul class="nav-links d-flex align-center">
           <li>
             <a
-            href="./signup.html"
+              href="./login.html"
               class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
             >
-              Signup
+              Login
             </a>
           </li>
           <li class="p-relative text-md icon-badge-wrapper m-3">
@@ -56,7 +60,7 @@
         </ul>
       </header>
 
-      <!-- login card -->
+      <!-- Sign up card -->
       <section class="login-card-wrapper container-center">
         <div class="login-card rounded-md box-shadow-sm">
           <div class="d-flex flex-col px-8 py-4">
@@ -72,6 +76,17 @@
           </div>
 
           <div class="d-flex flex-col px-8 py-4">
+            <label class="text-sm my-2" for="email"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="Enter name here"
+            />
+          </div>
+
+          <div class="d-flex flex-col px-8 py-4">
             <label class="input-label-required text-sm my-2" for="password"
               >Password</label
             >
@@ -82,6 +97,17 @@
               required
             />
           </div>
+          <div class="d-flex flex-col px-8 py-4">
+            <label class="input-label-required text-sm my-2" for="password"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="text-input w-100 p-3 text-sm"
+              placeholder="Enter password again"
+              required
+            />
+          </div>
           <div class="d-flex align-center px-8 py-4">
             <input
               type="checkbox"
@@ -89,24 +115,20 @@
               name="remember-password"
             />
             <label class="text-sm ml-2" for="remember-password">
-              Remember Password</label
+              I accept all terms and conditions</label
             >
-            <div class="text-sm ml-auto">
-              <a class="link-text" href="#">Forgot your Password ?</a>
-            </div>
           </div>
           <div class="px-8 py-4">
             <button
               type="button"
               class="btn btn-primary rounded-sm text-sm p-4 w-100"
             >
-              Login
+              Create New Account
             </button>
 
             <div class="text-sm ml-auto d-flex justify-center">
-              <a class="link-text" href="./signup.html"
-                >Create New Account
-                <i class="fas fa-greater-than ml-2 my-4"></i
+              <a class="link-text" href="./login.html"
+                >Already have an account <i class="fas fa-greater-than ml-2 my-4"></i
               ></a>
             </div>
           </div>
