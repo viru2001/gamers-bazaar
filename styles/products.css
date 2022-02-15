@@ -1,3 +1,4 @@
+@import "./card.css";
 :root {
   --card-border-color: #c9c9c9;
   --clear-btn-bg : #d31609;
@@ -36,23 +37,7 @@ header{
 footer{
     grid-area: footer;
 }
-/* product card   */
-.product-card {
-  width: 25rem;
-  border: solid 1px var(--card-border-color);
-}
-.product-card:hover{
-    background-color: var(--light-gray-color);
-}
-.vertical-card-badge{
-    top: 2rem;
-}
-.product-card-img{
-    width: 70%;
-}
-.card-btns-wrapper{
-    gap : 1rem;
-}
+
 /* utility */
 .place-center{
     justify-self: center;

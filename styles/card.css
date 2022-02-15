@@ -1,0 +1,17 @@
+/* product card   */
+.product-card {
+  width: 25rem;
+  border: solid 1px var(--card-border-color);
+}
+.product-card:hover{
+    background-color: var(--light-gray-color);
+}
+.vertical-card-badge{
+    top: 2rem;
+}
+.product-card-img{
+    width: 70%;
+}
+.card-btns-wrapper{
+    gap : 1rem;
+}
