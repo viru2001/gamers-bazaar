@@ -1,5 +1,5 @@
 .login-card-wrapper{
-    height: calc(100vh - 9.4rem);
+    height: 100vh;
     background-color: var(--light-gray-color);
 }
 .login-card{
@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 .btn-login{
-  color: var(--black-color);
-  
+  color: var(--black-color);  
 }
+.password-hide-icon{
+  top:1rem;
+  right: 1rem;
+}
+
