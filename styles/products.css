@@ -22,7 +22,9 @@ header{
 }
 #filters{
     grid-area: filters;
-    height: fit-content;
+    width: 22rem;
+    height: calc(100vh - 15rem);
+    overflow-x: hidden;
     overflow-y: auto;
     top:2rem;
 }
