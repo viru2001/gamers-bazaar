@@ -26,7 +26,7 @@
         <div class="search-box d-flex align-center justify-between my-8 w-50">
           <input
             type="text"
-            class="search-input w-100 p-2 m-2 text-sm"
+            class="search-input p-2 m-2 text-sm"
             placeholder="Search for products..."
             required
           />
@@ -34,30 +34,48 @@
             <i class="fas fa-search text-md"></i>
           </button>
         </div>
-        <ul class="nav-links d-flex align-center">
-          <li>
-            <a
-              href="./login.html"
-              class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
+        <nav class="nav-links d-flex align-center">
+          <a
+            href="./login.html"
+            class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
+          >
+            Login
+          </a>
+
+          <a
+            class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <i class="fas fa-store text-md"></i>
+            <span class="nav-link-description text-sm">Products</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <span class="p-relative"
+              ><i class="fas fa-shopping-cart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              ></span
             >
-              Login
-            </a>
-          </li>
-          <li class="p-relative text-md icon-badge-wrapper m-3">
-            <i class="fas fa-shopping-cart"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >5</span
+            <span class="nav-link-description text-sm">Cart</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <span class="p-relative">
+              <i class="fas fa-heart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >7</span
+              ></span
             >
-          </li>
-          <li class="p-relative text-md icon-badge-wrapper m-3">
-            <i class="fas fa-heart"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >7</span
-            >
-          </li>
-        </ul>
+            <span class="nav-link-description text-sm">Wishlist</span>
+          </a>
+        </nav>
       </header>
 
       <!-- Sign up card -->
@@ -76,9 +94,7 @@
           </div>
 
           <div class="d-flex flex-col px-8 py-4">
-            <label class="text-sm my-2" for="email"
-              >Name</label
-            >
+            <label class="text-sm my-2" for="email">Name</label>
             <input
               type="text"
               class="text-input w-100 p-3 text-sm"
@@ -128,7 +144,8 @@
 
             <div class="text-sm ml-auto d-flex justify-center">
               <a class="link-text" href="./login.html"
-                >Already have an account <i class="fas fa-greater-than ml-2 my-4"></i
+                >Already have an account
+                <i class="fas fa-greater-than ml-2 my-4"></i
               ></a>
             </div>
           </div>
@@ -137,7 +154,7 @@
 
       <!-- Footer -->
       <footer class="footer text-center p-4">
-        <div class="text-md">Made with ❤️ by Viresh Fegade</div>
+        <div class="text-sm font-wt-semibold">Made with ❤️ by Viresh Fegade</div>
         <ul class="d-flex justify-center align-center">
           <li class="m-2">
             <a
