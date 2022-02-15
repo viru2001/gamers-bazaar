@@ -5,3 +5,19 @@
 .text-dec-none{
   text-decoration: none;
 }
+.search-box{
+  width: 50rem;
+}
+.search-input{
+  width: 45rem;
+}
+.nav-link-icon{
+  cursor: pointer;
+  color:var(--black-color);
+}
+.nav-link-icon:hover{
+  color:var(--primary-color);
+}
+li{
+  list-style-type: none;
+}

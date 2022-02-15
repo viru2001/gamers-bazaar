@@ -17,12 +17,16 @@
       <header
         class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
       >
-        <a class="brand-name text-dec-none headline-lg font-wt-bold p-4" href="../index.html">Gamers Bazaar</a>
+        <a
+          class="brand-name text-dec-none headline-lg font-wt-bold p-4"
+          href="../index.html"
+          >Gamers Bazaar</a
+        >
 
         <div class="search-box d-flex align-center justify-between my-8 w-50">
           <input
             type="text"
-            class="search-input w-100 p-2 m-2 text-sm"
+            class="search-input p-2 m-2 text-sm"
             placeholder="Search for products..."
             required
           />
@@ -30,30 +34,48 @@
             <i class="fas fa-search text-md"></i>
           </button>
         </div>
-        <ul class="nav-links d-flex align-center">
-          <li>
-            <a
+        <nav class="nav-links d-flex align-center">
+          <a
             href="./signup.html"
-              class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
+            class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
+          >
+            Signup
+          </a>
+
+          <a
+            class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <i class="fas fa-store text-md"></i>
+            <span class="nav-link-description text-sm">Products</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <span class="p-relative"
+              ><i class="fas fa-shopping-cart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              ></span
             >
-              Signup
-            </a>
-          </li>
-          <li class="p-relative text-md icon-badge-wrapper m-3">
-            <i class="fas fa-shopping-cart"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >5</span
+            <span class="nav-link-description text-sm">Cart</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <span class="p-relative">
+              <i class="fas fa-heart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >7</span
+              ></span
             >
-          </li>
-          <li class="p-relative text-md icon-badge-wrapper m-3">
-            <i class="fas fa-heart"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >7</span
-            >
-          </li>
-        </ul>
+            <span class="nav-link-description text-sm">Wishlist</span>
+          </a>
+        </nav>
       </header>
 
       <!-- login card -->
@@ -115,7 +137,7 @@
 
       <!-- Footer -->
       <footer class="footer text-center p-4">
-        <div class="text-md">Made with ❤️ by Viresh Fegade</div>
+        <div class="text-sm font-wt-semibold">Made with ❤️ by Viresh Fegade</div>
         <ul class="d-flex justify-center align-center">
           <li class="m-2">
             <a
