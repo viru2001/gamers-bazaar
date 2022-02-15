@@ -1,0 +1,8 @@
+#wishlist-cards-wrapper{
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.vertical-card-badge{
+    top:2rem;
+}
