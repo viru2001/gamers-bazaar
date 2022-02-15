@@ -1,11 +1,16 @@
 :root {
   --card-border-color: #c9c9c9;
+  --clear-btn-bg : #d31609;
 }
 
 /* filter section */
 .filter-wrapper{
     width: 20rem;
     
+}
+.btn-clear{
+    background-color: var(--clear-btn-bg);
+    font-size: 1.2em;
 }
 /* full page grid layout */
 .wrapper{
