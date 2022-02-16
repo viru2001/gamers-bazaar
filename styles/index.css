@@ -1,3 +1,4 @@
+@import "./card.css";
 :root {
   --card-border-color: #c9c9c9;
 }
@@ -53,18 +54,11 @@
   font-size: 2rem;
 }
 /* deals of the day cards */
-.deals-of-day-card,.recently-viewed-card {
-  width: 25rem;
-  border: solid 1px var(--card-border-color);
-}
-.deals-of-day-card:hover,.recently-viewed-card:hover{
-    background-color: var(--light-gray-color);
-}
 .daily-deals-countdown{
     align-self: center;
 }
-.deal-of-day-keyboard-img-wrapper {
-  height: 45%;
+.card-keyboard-img-wrapper {
+  height: 37%;
 }
 /* utility */
 .place-center{
