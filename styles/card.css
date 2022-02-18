@@ -3,15 +3,15 @@
   width: 25rem;
   border: solid 1px var(--card-border-color);
 }
-.product-card:hover{
-    background-color: var(--light-gray-color);
+.product-card:hover {
+  background-color: var(--light-gray-color);
 }
-.vertical-card-badge{
-    top: 2rem;
+.vertical-card-badge {
+  top: 2rem;
 }
-.product-card-img{
-    width: 70%;
+.product-card-img {
+  width: 70%;
 }
-.card-btns-wrapper{
-    gap : 1rem;
+.card-btns-wrapper {
+  gap: 1rem;
 }

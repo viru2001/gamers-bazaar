@@ -2,22 +2,22 @@
 .brand-name {
   color: var(--primary-color);
 }
-.text-dec-none{
+.text-dec-none {
   text-decoration: none;
 }
-.search-box{
+.search-box {
   width: 50rem;
 }
-.search-input{
+.search-input {
   width: 45rem;
 }
-.nav-link-icon{
+.nav-link-icon {
   cursor: pointer;
-  color:var(--black-color);
+  color: var(--black-color);
 }
-.nav-link-icon:hover{
-  color:var(--primary-color);
+.nav-link-icon:hover {
+  color: var(--primary-color);
 }
-li{
+li {
   list-style-type: none;
 }

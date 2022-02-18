@@ -1,10 +1,10 @@
 :root {
   --card-border-color: #c9c9c9;
-   --clear-btn-bg : #d31609;
+  --clear-btn-bg: #d31609;
 }
 /* clear button */
-.btn-clear{
-    background-color: var(--clear-btn-bg);
+.btn-clear {
+  background-color: var(--clear-btn-bg);
 }
 /* card */
 .cart-product-heading {
