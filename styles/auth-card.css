@@ -1,20 +1,19 @@
-.login-card-wrapper{
-    height: 100vh;
-    background-color: var(--light-gray-color);
+.login-card-wrapper {
+  height: 100vh;
+  background-color: var(--light-gray-color);
 }
-.login-card{
+.login-card {
   background-color: var(--white-color);
   width: 50rem;
 }
-.link-text{
+.link-text {
   color: var(--primary-color);
   text-decoration: none;
 }
-.btn-login{
-  color: var(--black-color);  
+.btn-login {
+  color: var(--black-color);
 }
-.password-hide-icon{
-  top:1rem;
+.password-hide-icon {
+  top: 1rem;
   right: 1rem;
 }
-
