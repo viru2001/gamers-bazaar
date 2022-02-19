@@ -45,7 +45,7 @@ footer {
   border: solid 1px var(--card-border-color);
 }
 .card-wrapper:hover {
-  background-color: var(--light-gray-color);
+  background-color: var(--off-white-color);
 }
 #order-details {
   grid-area: details;

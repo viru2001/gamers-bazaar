@@ -36,7 +36,7 @@
 
 .featured-card:hover {
   border: solid 1px var(--primary-color);
-  background-color: var(--light-blue-color);
+  background-color: var(--primary-light-color);
 }
 #chair-img {
   width: 47%;

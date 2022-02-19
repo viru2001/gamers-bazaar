@@ -1,6 +1,6 @@
 .login-card-wrapper {
   height: 100vh;
-  background-color: var(--light-gray-color);
+  background-color: var(--off-white-color);
 }
 .login-card {
   background-color: var(--white-color);
