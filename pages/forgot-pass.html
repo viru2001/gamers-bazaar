@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gamers Zone|Login</title>
+    <title>Gamers Zone|Forgot Password</title>
 
     <link rel="stylesheet" href="https://cool-ui.netlify.app/styles/main.css" />
     <link rel="stylesheet" href="../styles/auth-card.css" />
@@ -145,9 +145,13 @@
         </nav>
       </section>
 
-      <!-- login card -->
+      <!-- forgot password card -->
       <section class="auth-card-wrapper container-center">
         <div class="auth-card rounded-md box-shadow-sm">
+          <p class="text-sm px-4 m-4">
+            Enter your email here , we'll send a link on your email to reset
+            your password.
+          </p>
           <div class="d-flex flex-col px-8 py-4">
             <label class="input-label-required text-sm my-2" for="email"
               >Email</label
@@ -160,50 +164,17 @@
             />
           </div>
 
-          <div class="d-flex flex-col px-8 py-4">
-            <label class="input-label-required text-sm my-2" for="password"
-              >Password</label
-            >
-            <div class="p-relative">
-              <input
-                type="password"
-                class="text-input w-100 p-3 text-sm"
-                placeholder="Enter password here"
-                required
-              />
-              <span
-                ><i
-                  class="fas fa-eye-slash text-sm p-absolute password-hide-icon"
-                ></i
-              ></span>
-            </div>
-          </div>
           <div class="d-flex align-center px-8 py-4">
-            <input
-              type="checkbox"
-              id="remember-password"
-              name="remember-password"
-            />
-            <label class="text-sm ml-2" for="remember-password">
-              Remember Password</label
-            >
-            <div class="text-sm ml-auto">
-              <a class="link-text" href="./forgot-pass.html">Forgot your Password ?</a>
-            </div>
+            <p class="text-sm ml-auto">Not able to reset Password ?</p>
+            <a href="#" class="text-sm ml-4 card-link">Get Help</a>
           </div>
           <div class="px-8 py-4">
             <button
               type="button"
               class="btn btn-primary rounded-sm text-sm p-4 w-100"
             >
-              Login
+              Reset Password
             </button>
-
-            <div class="text-sm ml-auto d-flex justify-center">
-              <a class="link-text" href="./signup.html"
-                >Create New Account <i class="fas fa-greater-than ml-2 my-4"></i
-              ></a>
-            </div>
           </div>
         </div>
       </section>
