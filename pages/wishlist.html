@@ -21,8 +21,71 @@
         href="../index.html"
         >Gamers Zone</a
       >
+      <button id="hamburger-btn" class="btn text-md ml-auto mr-8 p-4">
+        <i class="fas fa-bars hamburger-icon"></i>
+      </button>
+      <section id="nav-menu-without-hamburger" class="d-flex">
+        <div class="search-box d-flex align-center justify-between my-8 w-50">
+          <input
+            type="text"
+            class="search-input p-2 m-2 text-sm"
+            placeholder="Search for products..."
+            required
+          />
+          <button type="submit" class="btn btn-icon p-4">
+            <i class="fas fa-search text-md"></i>
+          </button>
+        </div>
+        <nav class="nav-links d-flex align-center">
+          <a
+            href="./login.html"
+            class="btn text-dec-none btn-primary rounded-sm text-sm p-4 ml-4"
+          >
+            Login
+          </a>
 
-      <div class="search-box d-flex align-center justify-between my-8 w-50">
+          <a
+            class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="./products.html"
+          >
+            <i class="fas fa-store text-md"></i>
+            <span class="nav-link-description text-sm">Products</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="./cart.html"
+          >
+            <span class="p-relative"
+              ><i class="fas fa-shopping-cart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              ></span
+            >
+            <span class="nav-link-description text-sm">Cart</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+            href="#"
+          >
+            <span class="p-relative">
+              <i class="fas fa-heart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >7</span
+              ></span
+            >
+            <span class="nav-link-description text-sm">Wishlist</span>
+          </a>
+        </nav>
+      </section>
+    </header>
+
+    <!-- hamburger nav menu -->
+    <section id="hamburger-nav-menu" class="d-none">
+      <div
+        class="search-box ml-8 d-flex align-center justify-between my-8 w-50"
+      >
         <input
           type="text"
           class="search-input p-2 m-2 text-sm"
@@ -33,49 +96,53 @@
           <i class="fas fa-search text-md"></i>
         </button>
       </div>
-      <nav class="nav-links d-flex align-center">
-        <a
-          href="./login.html"
-          class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
-        >
-          Login
-        </a>
 
-        <a
-          class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
-          href="./products.html"
-        >
-          <i class="fas fa-store text-md"></i>
-          <span class="nav-link-description text-sm">Products</span>
-        </a>
-        <a
-          class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
-          href="./cart.html"
-        >
-          <span class="p-relative"
-            ><i class="fas fa-shopping-cart text-md"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >5</span
-            ></span
+      <nav class="nav-links d-flex flex-col">
+        <div class="ml-8">
+          <a
+            href="./pages/login.html"
+            class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
           >
-          <span class="nav-link-description text-sm">Cart</span>
-        </a>
-        <a
-          class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
-          href="#"
-        >
-          <span class="p-relative">
-            <i class="fas fa-heart text-md"></i>
-            <span
-              class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
-              >7</span
-            ></span
+            Login
+          </a>
+        </div>
+        <div class="ml-4">
+          <a
+            class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+            href="./pages/products.html"
           >
-          <span class="nav-link-description text-sm">Wishlist</span>
-        </a>
+            <i class="fas fa-store text-md"></i>
+            <span class="nav-link-description text-sm ml-8">Products</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+            href="./pages/cart.html"
+          >
+            <span class="p-relative"
+              ><i class="fas fa-shopping-cart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              ></span
+            >
+            <span class="nav-link-description text-sm ml-8">Cart</span>
+          </a>
+          <a
+            class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+            href="./pages/wishlist.html"
+          >
+            <span class="p-relative">
+              <i class="fas fa-heart text-md"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >7</span
+              ></span
+            >
+            <span class="nav-link-description text-sm ml-8">Wishlist</span>
+          </a>
+        </div>
       </nav>
-    </header>
+    </section>
 
     <section class="m-8">
       <h1 class="headline-lg m-6">Your Wishlist</h1>
@@ -427,5 +494,6 @@
         </li>
       </ul>
     </footer>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
