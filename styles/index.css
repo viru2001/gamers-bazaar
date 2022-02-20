@@ -20,14 +20,12 @@
   top: 50%;
   right: 1%;
 }
-.carousel-content {
+#carousel-content {
   color: var(--white-color);
   bottom: 5%;
   left: 32%;
 }
-.vertical-card-badge {
-  top: 2rem;
-}
+
 /* fetaured categories cards */
 .featured-card {
   width: 20rem;
@@ -50,103 +48,79 @@
 #mouse-img {
   width: 70%;
 }
+
 .category-card-heading {
   font-size: 2rem;
 }
-/* deals of the day cards */
-.daily-deals-countdown {
-  align-self: center;
+/* hamburger icon */
+.hamburger-icon {
+  color: var(--primary-color);
 }
-.card-keyboard-img-wrapper {
-  height: 37%;
-}
-/* utility */
-.place-center {
-  justify-self: center;
-  align-self: center;
-}
-/* page layout */
-.wrapper {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:
-    "header              header        header         header         header"
-    "carousel           carousel      carousel       carousel      carousel"
-    "   .              f-heading      f-heading     f-heading          ."
-    "f-card-1           f-card-2      f-card-3      f-card-4       f-card-5"
-    "deals-heading   deals-countdown      .             .          deals-btn"
-    "deals-card-1         .         deals-card-2        .         deals-card-3 "
-    "recent-heading       .               .             .         recent-btn"
-    "recent-card-1  recent-card-2  recent-card-3  recent-card-4  recent-card-5"
-    "footer            footer          footer         footer         footer";
-}
-header {
-  grid-area: header;
-}
-.carousel-wrapper {
-  grid-area: carousel;
-}
-#featured-heading {
-  grid-area: f-heading;
+#hamburger-btn {
+  display: none;
 }
 
-#monitor-card {
-  grid-area: f-card-1;
+@media (max-width: 1038px) {
+  #nav-menu-without-hamburger {
+    display: none;
+  }
+  #hamburger-btn {
+    display: block;
+  }
+  .search-box {
+    width: 80vw;
+  }
+
+  #carousel-content {
+    left: 28%;
+  }
+  #carousel-heading{
+    font-size: 4rem;
+  }
 }
-#chair-card {
-  grid-area: f-card-2;
+@media (max-width: 968px) {
+  #carousel-heading{
+    font-size: 3.5rem;
+  }
+  #carousel-btn{
+    font-size: 2rem;
+  }
+} 
+
+@media (max-width: 768px) {
+   #carousel-content {
+    left: 26%;
+  }
+  #carousel-heading{
+    font-size: 3rem;
+  }
+  #carousel-btn{
+    padding: 1rem;
+  }
 }
-#keyboard-card {
-  grid-area: f-card-3;
-}
-#headphone-card {
-  grid-area: f-card-4;
-}
-#mouse-card {
-  grid-area: f-card-5;
-}
-.deals-heading {
-  grid-area: deals-heading;
-}
-.daily-deals-countdown {
-  grid-area: deals-countdown;
-}
-#deals-of-day-card-1 {
-  grid-area: deals-card-1;
-  grid-column: 1/3;
-}
-#deals-of-day-card-2 {
-  grid-area: deals-card-2;
-  justify-self: center;
-}
-#deals-of-day-card-3 {
-  grid-area: deals-card-3;
-  grid-column: 4/6;
-}
-.recently-viewed-heading {
-  grid-area: recent-heading;
-}
-.see-all-deals-btn {
-  grid-area: deals-btn;
-}
-.see-all-items-btn {
-  grid-area: recent-btn;
-}
-#recently-viewed-card-1 {
-  grid-area: recent-card-1;
-}
-#recently-viewed-card-2 {
-  grid-area: recent-card-2;
-}
-#recently-viewed-card-3 {
-  grid-area: recent-card-3;
-}
-#recently-viewed-card-4 {
-  grid-area: recent-card-4;
-  justify-self: center;
-}
-#recently-viewed-card-5 {
-  grid-area: recent-card-5;
-}
-footer {
-  grid-area: footer;
-}
+@media (max-width: 632px) {
+  #carousel-heading{
+    font-size: 2.5rem;
+  }
+  #carousel-btn{
+    font-size: 1.5rem;
+  }
+} 
+@media (max-width: 560px) {
+  #carousel-heading{
+    font-size: 2rem;
+  }
+  #carousel-btn{
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+} 
+
+@media (max-width: 446px) {
+  #carousel-heading{
+    font-size: 1.6rem;
+  }
+  #carousel-btn{
+    font-size: 1.2rem;
+  }
+} 
