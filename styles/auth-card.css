@@ -1,8 +1,8 @@
-.login-card-wrapper {
+.auth-card-wrapper {
   height: 100vh;
   background-color: var(--off-white-color);
 }
-.login-card {
+.auth-card {
   background-color: var(--white-color);
   width: 50rem;
 }
@@ -17,3 +17,13 @@
   top: 1rem;
   right: 1rem;
 }
+
+#signup-card-wrapper{
+  height: fit-content;
+}
+@media (max-width:500px) {
+    .auth-card{
+      width: 90vw;
+    }
+}
+
