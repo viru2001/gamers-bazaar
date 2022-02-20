@@ -52,25 +52,8 @@
 .category-card-heading {
   font-size: 2rem;
 }
-/* hamburger icon */
-.hamburger-icon {
-  color: var(--primary-color);
-}
-#hamburger-btn {
-  display: none;
-}
 
 @media (max-width: 1038px) {
-  #nav-menu-without-hamburger {
-    display: none;
-  }
-  #hamburger-btn {
-    display: block;
-  }
-  .search-box {
-    width: 80vw;
-  }
-
   #carousel-content {
     left: 28%;
   }
