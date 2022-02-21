@@ -17,7 +17,13 @@
   top: 1rem;
   right: 1rem;
 }
-
+.card-link{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.card-link:hover{
+  text-decoration: underline;
+}
 #signup-card-wrapper{
   height: fit-content;
 }
