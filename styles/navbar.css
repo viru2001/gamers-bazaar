@@ -29,6 +29,9 @@ li {
 #hamburger-btn {
   display: none;
 }
+#hamburger-nav-menu {
+  border-bottom: solid 2px var(--secondary-dark-color);
+}
 
 @media (max-width: 1038px) {
   #nav-menu-without-hamburger {
@@ -38,6 +41,11 @@ li {
     display: block;
   }
   .search-box {
-    width: 80vw;
+    width: 66vw;
+  }
+}
+@media (max-width: 500px) {
+  .btn-search {
+    right: 1rem;
   }
 }
