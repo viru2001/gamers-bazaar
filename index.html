@@ -83,31 +83,32 @@
       </header>
 
       <!-- hamburger nav menu -->
-      <section id="hamburger-nav-menu" class="d-none">
-        <div
-          class="search-box ml-8 d-flex align-center justify-between my-8 w-50"
-        >
-          <input
-            type="text"
-            class="search-input p-2 m-2 text-sm"
-            placeholder="Search for products..."
-            required
-          />
-          <button type="submit" class="btn btn-icon p-4">
-            <i class="fas fa-search text-md"></i>
-          </button>
-        </div>
-
-        <nav class="nav-links d-flex flex-col">
+      <section id="hamburger-nav-menu" class="d-none my-8">
+        <div class="d-flex align-center justify-center">
+          <div
+            class="search-box ml-8 d-flex align-center justify-between my-8 w-50"
+          >
+            <input
+              type="text"
+              class="search-input p-2 m-2 text-sm"
+              placeholder="Search for products..."
+              required
+            />
+            <button type="submit" class="btn btn-search btn-icon p-4 p-relative">
+              <i class="fas fa-search text-md"></i>
+            </button>
+          </div>
           <div class="ml-8">
             <a
               href="./pages/login.html"
-              class="btn text-dec-none btn-primary rounded-sm text-sm p-4"
+              class="btn text-dec-none btn-primary rounded-sm text-sm p-4 mr-4"
             >
               Login
             </a>
           </div>
-          <div class="ml-4">
+        </div>
+        <nav class="nav-links">
+          <div class="d-flex ml-4 justify-around">
             <a
               class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex align-center text-dec-none"
               href="./pages/products.html"
@@ -174,7 +175,7 @@
             id="carousel-btn"
             class="btn btn-primary btn-link rounded-sm text-md p-5"
           >
-            <a href="#featured-heading">Explore</a>
+            <a href="./pages/products.html">Explore</a>
           </button>
         </div>
       </section>
